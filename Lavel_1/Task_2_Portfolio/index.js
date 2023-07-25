@@ -1,7 +1,7 @@
 let header = document.querySelector("header");
 let menu = document.querySelector("#menu-icon");
 let navbar = document.querySelector(".navbar");
-
+let footer=document.getElementById('footerP')
 window.addEventListener("scroll", () => {
   header.classList.toggle("shadow", window.scrollY > 0);
 });
@@ -21,10 +21,12 @@ darkmode.onclick = () => {
     darkmode.classList.replace("fa-sun", "fa-moon");
     darkmode.style.color='blue'
     document.body.classList.add("active");
+    footer.style.color='black';
   } else {
     darkmode.classList.replace("fa-moon", "fa-sun");
     darkmode.style.color='yellow'
     document.body.classList.remove("active");
+    footer.style.color='white'
   }
 };
 
@@ -62,6 +64,7 @@ inputs.forEach((input) => {
 const contactName = document.getElementById("contactName");
 const contactEmail = document.getElementById("contactEmail");
 const contactMessage = document.getElementById("contactMessage");
+const contactPhone = document.getElementById("contactPhone");
 
 const contactSubmit = document.getElementById("contactSubmit");
 contactSubmit.onclick = async (e) => {
@@ -74,7 +77,7 @@ contactSubmit.onclick = async (e) => {
     user_id: 'ta-WWGEIz_7x47NNm',
     template_params: {
       'from_name': contactName.value,
-      'to_name' : 'Aniket',
+      'to_name' : 'Satyam',
       'message' : contactMessage.value,
       'from_email' : contactEmail.value
     }
@@ -103,6 +106,7 @@ contactSubmit.onclick = async (e) => {
   contactName.value = null;
   contactEmail.value = null;
   contactMessage.value = null;
+  contactPhone.value=null
 };
 
 let slider2 = document.querySelector('.slider2 .list2');

@@ -60,7 +60,6 @@ section {
 body.active {
   --bg-color: #fff;
   --text-color: #0f0c27;
-
 }
 
 body {
@@ -202,10 +201,18 @@ header.shadow {
   border-radius: 50%;
 }
 
-
+#btn{
+  background-color: blue;
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  color: #fafafa;
+}
+#btn:hover{
+  background: var(--hover);
+}
 .btn {
   display: inline-block;
-  background: var(--main-color);
+  background: var(--hover);
   color: #fff;
   padding: 1rem 2rem;
   border-radius: 0.5rem;
@@ -231,12 +238,10 @@ header.shadow {
 
 .about-container>div:nth-child(2) {
   width: 70%;
-  /* border: 1px solid greenyellow; */
 }
 
 .about-container>div:nth-child(1) {
   width: 30%;
-  /* border: 1px solid greenyellow; */
 }
 
 #yourSP {
@@ -248,9 +253,7 @@ header.shadow {
 }
 
 #about {
-  /* border: 3px solid blue; */
   margin-top: -70px;
-  /* padding-top: -200px; */
   height: 80vh;
 }
 
@@ -278,10 +281,8 @@ skills-container>div>div {
 
 .skills-container {
   display: grid;
-  /* width: 80%; */
   margin: auto;
-  /* border: 1px solid wheat; */
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   grid-column-gap: 40px;
   grid-row-gap: 30px;
 }
@@ -1429,4 +1430,15 @@ textarea.input {
   .btn {
     padding: 0.45rem 1.2rem;
   }
+}
+
+footer > p {
+  text-align: center;
+  color: blanchedalmond;
+  margin: 10px;
+}
+
+footer > p > a{
+  color: #00bafc;
+  text-decoration: none;
 }
